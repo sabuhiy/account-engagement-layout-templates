@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="%%description%%">
+<meta name="author" content="Sabuhi Yahyayev, and CloudKettle team">
+<title>%%title%%</title>
+
+<!-- Bootstrap core CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">  
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+    body {
+    font-family: 'Roboto', sans-serif;
+    }
+    .navbar-brand-logo {
+    max-height: 2rem;
+    width: auto;
+    }
+    /* Form Style */
+    #pardot-form .form-field {
+    margin:0;
+    padding:5px 0 0 0;
+    } 
+    #pardot-form input.text,
+    #pardot-form textarea.standard,
+    #pardot-form select,
+    #pardot-form input.date { 
+    background-color:white;
+    border:solid 1px #E0E0E0;
+    font-size:15px;
+    color:#757575;
+    -moz-border-radius:03px;
+    -webkit-border-radius:03px;
+    border-radius:03px;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:10px;
+    padding-right:10px;
+    width:100%;
+    font-family:'Roboto', sans-serif;
+    box-sizing:border-box;
+    }
+    #pardot-form input.text:focus,
+    #pardot-form textarea.standard:focus,
+    #pardot-form select:focus,
+    #pardot-form input.date:focus { 
+    border-color:#cccccc;
+    outline: none;
+    }
+    #pardot-form span.value { 
+    margin-left: 0;
+    }
+    #pardot-form label {
+    font-size:15px;
+    color:#757575;
+    font-weight:normal;
+    padding-top:5px;
+    padding-bottom:5px;
+    float:none;
+    text-align:left;
+    width:auto;
+    display:block;
+    }
+    #pardot-form .submit input {
+    margin:0;
+    background-color:#5C2D91;
+    border:solid 1px #5C2D91;
+    font-size:16px;
+    color:white;
+    font-weight:normal;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-right:30px;
+    padding-left:30px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    }
+    #pardot-form .submit input:hover {
+    background-color:#325D79;
+    border-color:#325D79;
+    color:white;
+    }
+    #pardot-form .submit {
+    margin:0;
+    padding-top:20px;
+    padding-bottom:0px;
+    }
+    .pd-checkbox input {
+        opacity: 0;
+        position: absolute;
+    }
+    .pd-checkbox input, .pd-checkbox label {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 5px;
+        cursor: pointer;
+    }
+    .pd-checkbox label {
+        position: relative;
+    }
+    .pd-checkbox input+label:before {
+        content: '';
+        background:white;
+        border: 1px solid#c7c7c7 ;
+        display: inline-block;
+        vertical-align: middle;
+        width: 20px;
+        height: 20px;
+        padding: 0px;
+        margin-right: 10px;
+        text-align: center;
+        font-size: 15px;
+        line-height: normal;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+    }
+    .pd-checkbox input:checked+label:before {
+        content: "\2713";
+        background:#5C2D91;
+        color:white;
+        border-color:#5C2D91;
+    }
+    form.form p.no-label {
+        margin-left: 0 !important;
+    }
+
+    .pd-radio input {
+        opacity: 0;
+        position: absolute;   
+    }
+    .pd-radio input, .pd-radio label {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 5px;
+        cursor: pointer;
+    }
+    .pd-radio label {
+        position: relative;
+    }
+    .pd-radio input + label:before {
+        content: '';
+        background:white;
+        border: 1px solid#c7c7c7;
+        display: inline-block;
+        vertical-align: middle;
+        width: 20px;
+        height: 20px;
+        padding: 0px;
+        margin-right: 10px;
+        text-align: center;
+        font-size: 15px;
+        line-height: normal;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+    }
+    .pd-radio input + label:before {
+        border-radius: 50%;
+    }
+    .pd-radio input:checked + label:before {
+        content: "\25CF";
+        background:#5C2D91;
+        color:white;
+        border-color:#5C2D91;
+    }
+</style>
+</head>
+<body class="bg-light-subtle">  
+  
+<!-- Main Start -->    
+<main class="py-5">
+<div class="container">
+    <div class="row">
+        <!-- Column Left -->  
+        <div class="col-md-7">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="#">
+                        <img class="navbar-brand-logo" src="https://www.nextinc.xyz/l/761802/2023-09-02/227rl1/761802/1693694566ktw0fA0n/nextdata.svg" alt="Logo" pardot-region="Logo">
+                    </a>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-md-12">
+                    <h1 class="display-4 fw-bold text-secondary" pardot-region="main-title">Experience NextData’s Future Innovations</h1>
+                </div>
+            </div>
+            <div class="row py-4">
+                <div class="col-md-8 mx-auto">
+                    <img src="https://www.nextinc.xyz/l/761802/2023-08-01/227rbs/761802/1690910878DEz9LCyg/moredata.png" class="img-fluid" pardot-region="main-image">
+                </div>
+            </div>        
+            <div class="row">
+                <div class="col-md-12" pardot-region="main-copy">
+                    <p>Join us in the heart of innovation at NextData's upcoming San Francisco event. We're ready to lift the veil on our latest, most advanced product developments, which are set to redefine the landscape of data analytics. This is your chance to be among the first to witness the future we're shaping.</p>
+                    <p>In this two-day whirlwind of discovery, you'll hear from the industry's leading analysts and thinkers, get a deep dive into the state of data analytics, and explore NextData's newest advancements. It's more than just an event – it's your passport to the future of data. Be part of the revolution.</p>     
+                    <h3 class="fs-5 fw-bold">What You'll Learn</h3>  
+                    <ul>
+                        <li>Uncover the future of data analytics</li>
+                        <li>Engage with leading industry experts</li>
+                        <li>Explore NextData’s latest product innovations</li>
+                        <li>Gain unique insights into data strategies</li>
+                    </ul>   
+                </div>
+            </div>                         
+        </div>
+    
+        <!-- Column Right --> 
+        <div class="col-md-4 offset-md-1">
+            <div class="bg-white rounded-5 p-5 mt-5 mt-md-0 border border-opacity-25 border-3">
+                <h4 class="fw-bolder text-primary" pardot-region="form-cta">Reserve Your Spot Now</h4>
+                <div>%%content%%</div>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+<!-- Main End -->    
+
+<!-- Spotlight Start -->  
+<section>
+<div class="container">
+    <div class="row py-5 border-top border-dark d-flex align-items-center">
+        <div class="col-md-8 text-center text-md-start" pardot-region="footer-cta-tagline">
+            <h3>Experience the future firsthand. Sign up for a one-on-one product demo with our experts.</h3>
+        </div>
+        <div class="col-md-4 text-center" pardot-region="footer-cta">
+            <a href="#" class="btn btn-lg btn-dark rounded-3 text-uppercase">Request a demo</a>
+        </div>        
+    </div>
+    </div>
+</section>
+<!-- Spotlight End -->  
+
+<!-- Footer Start -->  
+<footer>
+<div class="container">
+    <div class="row py-4 border-top border-dark">
+    <div class="col-md-6 text-center text-md-start" pardot-region="footer">
+        Homepage
+    </div>
+    <div class="col-md-6 text-center text-md-end" pardot-region="copyright">
+        &copy; 2023 &middot; NextData 
+    </div>        
+    </div>
+</div>
+</footer>
+<!-- Footer End -->  
+  
+  </body>
+</html>
