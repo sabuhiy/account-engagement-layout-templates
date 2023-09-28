@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="%%description%%">
+<meta name="author" content="Sabuhi Yahyayev, and CloudKettle team">
+<title>%%title%%</title>
+
+<!-- Bootstrap core CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">  
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+    body {
+    font-family: 'Roboto', sans-serif;
+    }
+    .navbar-brand-logo {
+    max-height: 2rem;
+    width: auto;
+    }
+    /* Form Style */
+    #pardot-form {
+	font-family:'Roboto', sans-serif;
+    }
+    #pardot-form .form-field {
+        margin:0;
+        padding:5px 0 0 0;
+    } 
+    /* The input fields */ 
+    #pardot-form input.text,
+    #pardot-form textarea.standard,
+    #pardot-form select,
+    #pardot-form input.date { 
+        background-color:white;
+        border:solid 1px #E0E0E0;
+        font-size:15px;
+        color:#757575;
+        -moz-border-radius:10px;
+        -webkit-border-radius:10px;
+        border-radius:10px;
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-left:10px;
+        padding-right:10px;
+        width:100%;
+        font-family:'Roboto', sans-serif;
+        box-sizing:border-box;
+    }
+    /* the input fields on focus */ 
+    #pardot-form input.text:focus,
+    #pardot-form textarea.standard:focus,
+    #pardot-form select:focus,
+    #pardot-form input.date:focus { 
+        border-color:#cccccc;
+        outline: none;
+    }
+    #pardot-form span.value { 
+        margin-left: 0;
+    }
+    /* the field labels */ 
+    #pardot-form label {
+        font-size:15px;
+        color:#757575;
+        font-weight:normal;
+        padding-top:5px;
+        padding-bottom:5px;
+        float:none;
+        text-align:left;
+        width:auto;
+        display:block;
+    }
+    /* the submit button */ 
+    #pardot-form .submit input {
+        margin:0;
+        background-color:#0b5cff;
+        border:solid 1px #0b5cff;
+        font-size:16px;
+        color:white;
+        font-weight:normal;
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-right:30px;
+        padding-left:30px;
+        -moz-border-radius:10px;
+        -webkit-border-radius:10px;
+        border-radius:10px;
+        width:100%;
+    }
+    /* the submit button hover */ 
+    #pardot-form .submit input:hover {
+        background-color:#0b5cff;
+        border-color:#0b5cff;
+        color:white;
+    }
+    /* the spacing around the submit button */ 
+    #pardot-form .submit {
+        margin:0;
+        padding-top:10px;
+        padding-bottom:0px;
+        text-align:center;
+    }
+    /* hide the regular checkbox */
+    .pd-checkbox input {
+        opacity: 0;
+        position: absolute;
+    }
+    /* position the label */
+    .pd-checkbox input, .pd-checkbox label {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 5px;
+        cursor: pointer;
+    }
+    .pd-checkbox label {
+        position: relative;
+    }
+    /* style the unchecked checkbox */
+    .pd-checkbox input+label:before {
+        content: '';
+        background:white;
+        border: 1px solid#c7c7c7 ;
+        display: inline-block;
+        vertical-align: middle;
+        width: 20px;
+        height: 20px;
+        padding: 0px;
+        margin-right: 10px;
+        text-align: center;
+        font-size: 15px;
+        line-height: normal;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+    }
+    /* style the checked checkbox */
+    .pd-checkbox input:checked+label:before {
+        content: "\2713";
+        background:#0b5cff;
+        color:white;
+        border-color:#0b5cff;
+    }
+    form.form p.no-label {
+        margin-left: 0 !important;
+    }
+
+    /* hide the regular radio button */
+    .pd-radio input {
+        opacity: 0;
+        position: absolute;   
+    }
+    /* position the label */
+    .pd-radio input, .pd-radio label {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 5px;
+        cursor: pointer;
+    }
+    .pd-radio label {
+        position: relative;
+    }
+    /* style the unchecked radio button */
+    .pd-radio input + label:before {
+        content: '';
+        background:white;
+        border: 1px solid#c7c7c7;
+        display: inline-block;
+        vertical-align: middle;
+        width: 20px;
+        height: 20px;
+        padding: 0px;
+        margin-right: 10px;
+        text-align: center;
+        font-size: 15px;
+        line-height: normal;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+    }
+    .pd-radio input + label:before {
+        border-radius: 50%;
+    }
+    /* style the selected radio button */
+    .pd-radio input:checked + label:before {
+        content: "\25CF";
+        background:#0b5cff;
+        color:white;
+        border-color:#0b5cff;
+    }
+</style>
+</head>
+<body> 
+    
+<!-- Header Start -->    
+<header class="py-4">
+<div class="container">
+    <div class="row py-2">
+        <!-- Column Left -->  
+        <div class="col-md-12">
+            <a href="#">
+                <img class="navbar-brand-logo" src="https://www.nextinc.xyz/l/761802/2023-09-02/227rl1/761802/1693694566ktw0fA0n/nextdata.svg" alt="Logo" pardot-region="Logo">
+            </a>                    
+        </div>
+    </div>
+</div>
+</header>
+<!-- Header End -->        
+  
+<!-- Main Start -->    
+<main class="py-5 bg-primary text-white">
+<div class="container">
+    <div class="row py-3">
+        <!-- Column Left -->  
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="display-2 fw-light text-white" pardot-region="main-title" pardot-region-type="html">Book a demo instantly
+                    </h1>
+                </div>
+            </div>     
+            <div class="row">
+                <div class="col-md-12" pardot-region="main-copy">
+                    <p class="fs-5">Let’s explore how Zenhub can work for your team. Complete the form to set up a custom demo or get help determining the right plan for your unique needs.
+                    </p> 
+                    <p class="fs-5">If you need technical support, please visit our help center.
+                    </p>
+                </div>
+            </div> 
+            <div class="row py-4">
+                <div class="col-md-12" pardot-region="main-logos">
+                    <div class="d-flex align-items-center">
+                        <div class="flex-fill text-center"><img src="https://assets-global.website-files.com/62827cf4fe5eb528708511d4/64f8be01d5e21d3daaf16143_Adobe.svg"></div>
+                        <div class="flex-fill text-center"><img src="https://assets-global.website-files.com/62827cf4fe5eb528708511d4/64f8bdf3221daad71a81d528_microsoft.svg"></div>
+                        <div class="flex-fill text-center"><img src="https://assets-global.website-files.com/62827cf4fe5eb528708511d4/64541f07101e24c5a40649f4_Apple.svg"></div>
+                        <div class="flex-fill text-center"><img src="https://assets-global.website-files.com/62827cf4fe5eb528708511d4/64541f0828c4b215ac3b09da_Hyundai.svg"></div>
+                    </div>
+                    <div class="d-flex align-items-center pt-4">
+                        <div class="flex-fill text-center"><img src="https://assets-global.website-files.com/62827cf4fe5eb528708511d4/64541e7b74022479b265adaa_Automatic.svg"></div>
+                        <div class="flex-fill text-center"><img src="https://assets-global.website-files.com/62827cf4fe5eb528708511d4/64541d7feeb0d632b0bf6b48_HubSpot.svg"></div>
+                        <div  class="flex-fill text-center"><img src="https://assets-global.website-files.com/62827cf4fe5eb528708511d4/64541f08a5b35932c37fd8d6_Red%20Hat.svg"></div>
+                        <div class="flex-fill text-center"><img src="https://assets-global.website-files.com/62827cf4fe5eb528708511d4/64541f0aea63241443baa269_Comcast.svg"></div>
+                    </div>                    
+                </div>
+            </div>                                     
+        </div>
+    
+        <!-- Column Right --> 
+        <div class="col-md-5 offset-md-1">
+            <div class="bg-white rounded-4 p-5 mt-5 mt-md-0 shadow">
+                <h4 class="text-primary" pardot-region="form-cta">Schedule Your Demo Today!</h4>
+                <div>%%content%%</div>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+<!-- Main End -->    
+
+<!-- Spotlight Start -->  
+<section class="bg-light py-3">
+<div class="container">
+    <div class="row py-5">
+        <!-- Column Left -->  
+        <div class="col-md-6" pardot-region="spotlight-copy">
+            <h1 class="display-6 fw-light mb-4">What you'll get in a demo</h1> 
+            <p>We'll work together to understand your organization's unique challenges and needs, and dive into how Zenhub can help. Beyond that, we'll also discuss:</p> 
+            <ul class="list-unstyled">
+                <li class="py-1"><i class="bi bi-check-lg text-success"></i> How to use Zenhub features to overcome your organization’s challenges
+                </li>
+                <li class="py-1"><i class="bi bi-check-lg text-success"></i> How Zenhub keeps you and your customer's data safe
+                </li>
+                <li class="py-1"><i class="bi bi-check-lg text-success"></i> Our Enterprise and Growth plans, and which one might be right for your team
+                </li>
+            </ul>                                        
+        </div>
+    
+        <!-- Column Right --> 
+        <div class="col-md-5 offset-md-1" pardot-region="spotlight-badges">
+            <h4 class="fs-5 fw-light text-center mb-4">Award-winning technology purpose-built for data teams</h4>
+            <div class="d-flex align-items-center gap-3">
+                <div class="flex-fill text-center"><img src="https://www.nextinc.xyz/l/761802/2023-09-27/22nv8s/761802/1695835305tZZG8lwk/badge_1.svg"></div>
+                <div class="flex-fill text-center"><img src="https://www.nextinc.xyz/l/761802/2023-09-27/22nv8p/761802/1695835305RjLBZzaj/badge_2.svg"></div>
+                <div class="flex-fill text-center"><img src="https://www.nextinc.xyz/l/761802/2023-09-27/22nv8w/761802/1695835305GaTHcbJo/badge_3.svg"></div>
+            </div>
+        </div>       
+    </div>
+    </div>
+</section>
+<!-- Spotlight End -->  
+
+<!-- Footer Start -->  
+<footer class="py-2">
+<div class="container">
+    <div class="row py-4">
+        <div class="col-md-2 text-center text-md-left">
+            <img class="navbar-brand-logo" src="https://storage.demo.pardot.com/761802/1693694954uIhs81wQ/nextdata_dark.svg" alt="Logo" pardot-region="footer-l
+            ogo">
+        </div>
+        <div class="col-md-8 text-center small" pardot-region="footer-links">
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#" class="text-secondary text-decoration-none">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="#" class="text-secondary text-decoration-none">Terms of Use</a></li>
+                <li class="list-inline-item"><a href="#" class="text-secondary text-decoration-none">Sitemap</a></li>
+            </ul>     
+        </div>  
+        <div class="col-md-2 text-center text-md-left" pardot-region="footer-social">
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#" class="text-secondary"><i class="bi bi-linkedin"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-secondary"><i class="bi bi-reddit"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-secondary"><i class="bi bi-github"></i></a></li>
+            </ul>                   
+        </div>                         
+    </div>
+</div>
+</footer>
+<!-- Footer End -->  
+  
+  </body>
+</html>
