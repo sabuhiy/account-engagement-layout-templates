@@ -9,184 +9,17 @@
 
 <!-- Bootstrap core CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">  
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> 
+<link rel="stylesheet" href="https://www.nextinc.xyz/l/761802/2023-09-29/22ss1d/761802/1696014931O9EWf1iB/style_dark.css"> 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-    body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+body {
     font-family: 'Roboto', sans-serif;
-    }
-    .navbar-brand-logo {
+}
+.navbar-brand-logo {
     max-height: 2rem;
     width: auto;
-    }
-    /* Form Style */
-    #pardot-form {
-	font-family:'Roboto', sans-serif;
-    }
-    #pardot-form .form-field {
-        margin:0;
-        padding:5px 0 0 0;
-    } 
-    /* The input fields */ 
-    #pardot-form input.text,
-    #pardot-form textarea.standard,
-    #pardot-form select,
-    #pardot-form input.date { 
-        background-color:white;
-        border:solid 1px #E0E0E0;
-        font-size:15px;
-        color:#757575;
-        -moz-border-radius:10px;
-        -webkit-border-radius:10px;
-        border-radius:10px;
-        padding-top:10px;
-        padding-bottom:10px;
-        padding-left:10px;
-        padding-right:10px;
-        width:100%;
-        font-family:'Roboto', sans-serif;
-        box-sizing:border-box;
-    }
-    /* the input fields on focus */ 
-    #pardot-form input.text:focus,
-    #pardot-form textarea.standard:focus,
-    #pardot-form select:focus,
-    #pardot-form input.date:focus { 
-        border-color:#cccccc;
-        outline: none;
-    }
-    #pardot-form span.value { 
-        margin-left: 0;
-    }
-    /* the field labels */ 
-    #pardot-form label {
-        font-size:15px;
-        color:#757575;
-        font-weight:normal;
-        padding-top:5px;
-        padding-bottom:5px;
-        float:none;
-        text-align:left;
-        width:auto;
-        display:block;
-    }
-    /* the submit button */ 
-    #pardot-form .submit input {
-        margin:0;
-        background-color:#0b5cff;
-        border:solid 1px #0b5cff;
-        font-size:16px;
-        color:white;
-        font-weight:normal;
-        padding-top:10px;
-        padding-bottom:10px;
-        padding-right:30px;
-        padding-left:30px;
-        -moz-border-radius:10px;
-        -webkit-border-radius:10px;
-        border-radius:10px;
-        width:100%;
-    }
-    /* the submit button hover */ 
-    #pardot-form .submit input:hover {
-        background-color:#0b5cff;
-        border-color:#0b5cff;
-        color:white;
-    }
-    /* the spacing around the submit button */ 
-    #pardot-form .submit {
-        margin:0;
-        padding-top:10px;
-        padding-bottom:0px;
-        text-align:center;
-    }
-    /* hide the regular checkbox */
-    .pd-checkbox input {
-        opacity: 0;
-        position: absolute;
-    }
-    /* position the label */
-    .pd-checkbox input, .pd-checkbox label {
-        display: inline-block;
-        vertical-align: middle;
-        margin: 5px;
-        cursor: pointer;
-    }
-    .pd-checkbox label {
-        position: relative;
-    }
-    /* style the unchecked checkbox */
-    .pd-checkbox input+label:before {
-        content: '';
-        background:white;
-        border: 1px solid#c7c7c7 ;
-        display: inline-block;
-        vertical-align: middle;
-        width: 20px;
-        height: 20px;
-        padding: 0px;
-        margin-right: 10px;
-        text-align: center;
-        font-size: 15px;
-        line-height: normal;
-        border-radius: 5px;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-    }
-    /* style the checked checkbox */
-    .pd-checkbox input:checked+label:before {
-        content: "\2713";
-        background:#0b5cff;
-        color:white;
-        border-color:#0b5cff;
-    }
-    form.form p.no-label {
-        margin-left: 0 !important;
-    }
-
-    /* hide the regular radio button */
-    .pd-radio input {
-        opacity: 0;
-        position: absolute;   
-    }
-    /* position the label */
-    .pd-radio input, .pd-radio label {
-        display: inline-block;
-        vertical-align: middle;
-        margin: 5px;
-        cursor: pointer;
-    }
-    .pd-radio label {
-        position: relative;
-    }
-    /* style the unchecked radio button */
-    .pd-radio input + label:before {
-        content: '';
-        background:white;
-        border: 1px solid#c7c7c7;
-        display: inline-block;
-        vertical-align: middle;
-        width: 20px;
-        height: 20px;
-        padding: 0px;
-        margin-right: 10px;
-        text-align: center;
-        font-size: 15px;
-        line-height: normal;
-        border-radius: 5px;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-    }
-    .pd-radio input + label:before {
-        border-radius: 50%;
-    }
-    /* style the selected radio button */
-    .pd-radio input:checked + label:before {
-        content: "\25CF";
-        background:#0b5cff;
-        color:white;
-        border-color:#0b5cff;
-    }
+}
 </style>
 </head>
 <body> 
@@ -213,9 +46,8 @@
         <!-- Column Left -->  
         <div class="col-md-6">
             <div class="row">
-                <div class="col-md-12">
-                    <h1 class="display-2 fw-light text-white" pardot-region="main-title" pardot-region-type="html">Book a demo instantly
-                    </h1>
+                <div class="col-md-12" pardot-region="main-title">
+                    <p class="display-2 fw-light text-white">Book a demo instantly</p>
                 </div>
             </div>     
             <div class="row">
