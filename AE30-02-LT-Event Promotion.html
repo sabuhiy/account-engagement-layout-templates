@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="%%description%%">
-<meta name="author" content="Sabuhi Yahyayev, and CloudKettle team">
+<meta name="author" content="Sabuhi Yahyayev, MarketingCloud30">
 <title>%%title%%</title>
 
 <!-- Bootstrap core CSS -->
@@ -24,15 +24,15 @@ body {
  	margin:0;
  	padding:5px 0 0 0;
 } 
- /* The input fields */ 
- #pardot-form input.text,
- #pardot-form textarea.standard,
- #pardot-form select,
- #pardot-form input.date { 
+/* The input fields */ 
+#pardot-form input.text,
+#pardot-form textarea.standard,
+#pardot-form select,
+#pardot-form input.date { 
 	background-color:white;
-	border:solid 1px #0050f0;
+	border:solid 1px #E0E0E0;
 	font-size:15px;
-	color:#444444;
+	color:#757575;
 	-moz-border-radius:25px;
 	-webkit-border-radius:25px;
 	border-radius:25px;
@@ -45,20 +45,20 @@ body {
 	box-sizing:border-box;
 }
 /* the input fields on focus */ 
- #pardot-form input.text:focus,
- #pardot-form textarea.standard:focus,
- #pardot-form select:focus,
- #pardot-form input.date:focus { 
-	border-color:#0050f0;
+#pardot-form input.text:focus,
+#pardot-form textarea.standard:focus,
+#pardot-form select:focus,
+#pardot-form input.date:focus { 
+	border-color:#cccccc;
 	outline: none;
 }
 #pardot-form span.value { 
 	margin-left: 0;
 }
 /* the field labels */ 
- #pardot-form label {
+#pardot-form label {
 	font-size:15px;
-	color:white;
+	color:#757575;
 	font-weight:normal;
 	padding-top:5px;
 	padding-bottom:5px;
@@ -66,36 +66,6 @@ body {
 	text-align:left;
 	width:auto;
 	display:block;
-}
-/* the submit button */ 
- #pardot-form .submit input {
-	margin:0;
-	background-color:#ecf0f1;
-	border:solid 3px #0b63e3;
-	font-size:16px;
-	color:#0d6efd;
-	font-weight:normal;
-	padding-top:10px;
-	padding-bottom:10px;
-	padding-right:30px;
-	padding-left:30px;
-	-moz-border-radius:25px;
-	-webkit-border-radius:25px;
-	border-radius:25px;
-	width:100%;
-}
-/* the submit button hover */ 
- #pardot-form .submit input:hover {
-	background-color:white;
-	border-color:#0d6efd;
-	color:#0d6efd;
-}
-/* the spacing around the submit button */ 
- #pardot-form .submit {
-	margin:0;
-	padding-top:25px;
-	padding-bottom:0px;
-	text-align:center;
 }
 /* hide the regular checkbox */
 .pd-checkbox input {
@@ -116,7 +86,7 @@ body {
 .pd-checkbox input+label:before {
     content: '';
     background:white;
-    border: 1px solid#0050f0 ;
+    border: 1px solid#c7c7c7 ;
     display: inline-block;
     vertical-align: middle;
     width: 20px;
@@ -133,9 +103,9 @@ body {
 /* style the checked checkbox */
 .pd-checkbox input:checked+label:before {
     content: "\2713";
-    background:white;
+    background:#0b5cff;
     color:white;
-    border-color:white;
+    border-color:#0b5cff;
 }
 form.form p.no-label {
     margin-left: 0 !important;
@@ -160,7 +130,7 @@ form.form p.no-label {
 .pd-radio input + label:before {
     content: '';
     background:white;
-    border: 1px solid#0050f0;
+    border: 1px solid#c7c7c7;
     display: inline-block;
     vertical-align: middle;
     width: 20px;
@@ -180,9 +150,37 @@ form.form p.no-label {
 /* style the selected radio button */
 .pd-radio input:checked + label:before {
     content: "\25CF";
-    background:white;
+    background:#0b5cff;
     color:white;
-    border-color:white;
+    border-color:#0b5cff;
+}
+/* SUBMIT */ 
+#pardot-form .submit input {
+	margin:0;
+	background-color:#0b5cff;
+	border:solid 1px #0b5cff;
+	font-size:16px;
+	color:white;
+	font-weight:normal;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-right:30px;
+	padding-left:30px;
+	-moz-border-radius:25px;
+	-webkit-border-radius:25px;
+	border-radius:25px;
+	width:100%;
+}
+ #pardot-form .submit input:hover {
+	background-color:#0050f0;
+	border-color:#0050f0;
+	color:white;
+}
+ #pardot-form .submit {
+	margin:0;
+	padding-top:20px;
+	padding-bottom:0px;
+	text-align:center;
 }
 </style>
 </head>
@@ -228,8 +226,8 @@ form.form p.no-label {
     
         <!-- Column Right --> 
         <div class="col-md-4 offset-md-1">
-            <div class="bg-primary rounded-5 p-5 mt-5 mt-md-0 border shadow text-white">
-                <h4 class="fw-bolder text-white" pardot-region="form-cta">Reserve Your Spot Now</h4>
+            <div class="bg-white rounded-5 p-5 mt-5 mt-md-0 border border-opacity-25 border-3">
+                <h4 class="fw-bolder text-primary" pardot-region="form-cta">Reserve Your Spot Now</h4>
                 <div>%%content%%</div>
             </div>
         </div>
@@ -257,12 +255,12 @@ form.form p.no-label {
 <footer>
 <div class="container">
     <div class="row py-4 border-top border-dark">
-        <div class="col-md-6 text-center text-md-start" pardot-region="footer">
-            Homepage
-        </div>
-        <div class="col-md-6 text-center text-md-end" pardot-region="copyright">
-            &copy; 2023 &middot; NextData 
-        </div>        
+    <div class="col-md-6 text-center text-md-start" pardot-region="footer">
+        Homepage
+    </div>
+    <div class="col-md-6 text-center text-md-end" pardot-region="copyright">
+        &copy; 2023 &middot; NextData 
+    </div>        
     </div>
 </div>
 </footer>

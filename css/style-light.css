@@ -2,11 +2,11 @@
  	margin:0;
  	padding:5px 0 0 0;
 } 
- /* The input fields */ 
- #pardot-form input.text,
- #pardot-form textarea.standard,
- #pardot-form select,
- #pardot-form input.date { 
+/* The input fields */ 
+#pardot-form input.text,
+#pardot-form textarea.standard,
+#pardot-form select,
+#pardot-form input.date { 
 	background-color:white;
 	border:solid 1px #E0E0E0;
 	font-size:15px;
@@ -23,10 +23,10 @@
 	box-sizing:border-box;
 }
 /* the input fields on focus */ 
- #pardot-form input.text:focus,
- #pardot-form textarea.standard:focus,
- #pardot-form select:focus,
- #pardot-form input.date:focus { 
+#pardot-form input.text:focus,
+#pardot-form textarea.standard:focus,
+#pardot-form select:focus,
+#pardot-form input.date:focus { 
 	border-color:#cccccc;
 	outline: none;
 }
@@ -34,7 +34,7 @@
 	margin-left: 0;
 }
 /* the field labels */ 
- #pardot-form label {
+#pardot-form label {
 	font-size:15px;
 	color:#757575;
 	font-weight:normal;
@@ -44,36 +44,6 @@
 	text-align:left;
 	width:auto;
 	display:block;
-}
-/* the submit button */ 
- #pardot-form .submit input {
-	margin:0;
-	background-color:#0b5cff;
-	border:solid 1px #0b5cff;
-	font-size:16px;
-	color:white;
-	font-weight:normal;
-	padding-top:10px;
-	padding-bottom:10px;
-	padding-right:30px;
-	padding-left:30px;
-	-moz-border-radius:25px;
-	-webkit-border-radius:25px;
-	border-radius:25px;
-	width:100%;
-}
-/* the submit button hover */ 
- #pardot-form .submit input:hover {
-	background-color:#0050f0;
-	border-color:#0050f0;
-	color:white;
-}
-/* the spacing around the submit button */ 
- #pardot-form .submit {
-	margin:0;
-	padding-top:20px;
-	padding-bottom:0px;
-	text-align:center;
 }
 /* hide the regular checkbox */
 .pd-checkbox input {
@@ -161,4 +131,32 @@ form.form p.no-label {
     background:#0b5cff;
     color:white;
     border-color:#0b5cff;
+}
+/* SUBMIT */ 
+#pardot-form .submit input {
+	margin:0;
+	background-color:#0b5cff;
+	border:solid 1px #0b5cff;
+	font-size:16px;
+	color:white;
+	font-weight:normal;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-right:30px;
+	padding-left:30px;
+	-moz-border-radius:25px;
+	-webkit-border-radius:25px;
+	border-radius:25px;
+	width:100%;
+}
+ #pardot-form .submit input:hover {
+	background-color:#0050f0;
+	border-color:#0050f0;
+	color:white;
+}
+ #pardot-form .submit {
+	margin:0;
+	padding-top:20px;
+	padding-bottom:0px;
+	text-align:center;
 }
