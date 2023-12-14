@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="%%description%%">
+<meta name="author" content="Sabuhi Yahyayev, and CloudKettle team">
+<title>%%title%%</title>
+
+<!-- Bootstrap core CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> 
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.navbar-brand-logo {
+    max-height: 2rem;
+    width: auto;
+}
+/* Form Style */
+#pardot-form .form-field {
+ 	margin:0;
+ 	padding:5px 0 0 0;
+} 
+ /* The input fields */ 
+ #pardot-form input.text,
+ #pardot-form textarea.standard,
+ #pardot-form select,
+ #pardot-form input.date { 
+	background-color:white;
+	border:solid 1px #E0E0E0;
+	font-size:15px;
+	color:#757575;
+	-moz-border-radius:25px;
+	-webkit-border-radius:25px;
+	border-radius:25px;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:15px;
+	padding-right:15px;
+	width:100%;
+	font-family:'Roboto', sans-serif;
+	box-sizing:border-box;
+}
+/* the input fields on focus */ 
+ #pardot-form input.text:focus,
+ #pardot-form textarea.standard:focus,
+ #pardot-form select:focus,
+ #pardot-form input.date:focus { 
+	border-color:#cccccc;
+	outline: none;
+}
+#pardot-form span.value { 
+	margin-left: 0;
+}
+/* the field labels */ 
+ #pardot-form label {
+	font-size:15px;
+	color:#757575;
+	font-weight:normal;
+	padding-top:5px;
+	padding-bottom:5px;
+	float:none;
+	text-align:left;
+	width:auto;
+	display:block;
+}
+/* the submit button */ 
+ #pardot-form .submit input {
+	margin:0;
+	background-color:#0b5cff;
+	border:solid 1px #0b5cff;
+	font-size:16px;
+	color:white;
+	font-weight:normal;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-right:30px;
+	padding-left:30px;
+	-moz-border-radius:25px;
+	-webkit-border-radius:25px;
+	border-radius:25px;
+	width:100%;
+}
+/* the submit button hover */ 
+ #pardot-form .submit input:hover {
+	background-color:#0050f0;
+	border-color:#0050f0;
+	color:white;
+}
+/* the spacing around the submit button */ 
+ #pardot-form .submit {
+	margin:0;
+	padding-top:20px;
+	padding-bottom:0px;
+	text-align:center;
+}
+/* position the label */
+.pd-checkbox input, .pd-checkbox label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer;
+}
+.pd-checkbox label {
+    display: inline-block !important;
+    position: relative;
+}
+.pd-checkbox .description {
+    display: inline-block;
+}
+form.form p.no-label {
+    margin-left: 0 !important;
+}
+
+/* hide the regular radio button */
+.pd-radio input {
+    opacity: 0;
+    position: absolute;   
+}
+/* position the label */
+.pd-radio input, .pd-radio label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer;
+}
+.pd-radio label {
+    position: relative;
+}
+/* style the unchecked radio button */
+.pd-radio input + label:before {
+    content: '';
+    background:white;
+    border: 1px solid#c7c7c7;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 15px;
+    line-height: normal;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.pd-radio input + label:before {
+    border-radius: 50%;
+}
+/* style the selected radio button */
+.pd-radio input:checked + label:before {
+    content: "\25CF";
+    background:#0b5cff;
+    color:white;
+    border-color:#0b5cff;
+}
+</style>
+</head>
+<body> 
+    
+<!-- Header Start -->    
+<header class="py-4">
+<div class="container">
+    <div class="row py-2">
+        <!-- Column Left -->  
+        <div class="col-md-12">
+            <a href="#">
+                <img class="navbar-brand-logo" src="https://www.nextinc.xyz/l/761802/2023-09-02/227rl1/761802/1693694566ktw0fA0n/nextdata.svg" alt="Logo" pardot-region="Logo">
+            </a>                    
+        </div>
+    </div>
+</div>
+</header>
+<!-- Header End -->  
+
+<!-- Spotlight Start -->  
+<section class="bg-primary text-white py-3">
+    <div class="container">
+        <div class="row py-5 justify-content-md-center">
+            <!-- Column Center -->  
+            <div class="col-md-8 text-center" pardot-region="spotlight-copy">
+                <h1 class="display-5 fw-light mb-0">Preference Center
+                </h1>  
+            </div>      
+        </div>
+    </div>
+</section>
+<!-- Spotlight End -->   
+
+<!-- Form Start -->  
+<section class="bg-light py-3" id="form-start">
+    <div class="container">
+        <div class="row py-5 justify-content-md-center">
+            <!-- Column Center -->  
+            <div class="col-md-5">
+                <div class="bg-white rounded-4 p-5 mt-5 mt-md-0 shadow">
+                    <div>%%content%%</div>
+                </div>                                    
+            </div>      
+        </div>
+    </div>
+</section>
+<!-- Form End -->
+
+<!-- Footer Start -->  
+<footer class="py-2">
+<div class="container">
+    <div class="row py-4">
+        <div class="col-md-2 text-center text-md-left">
+            <img class="navbar-brand-logo" src="https://storage.demo.pardot.com/761802/1693694954uIhs81wQ/nextdata_dark.svg" alt="Logo" pardot-region="footer-l
+            ogo">
+        </div>
+        <div class="col-md-8 text-center small" pardot-region="footer-links">
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#" class="text-secondary text-decoration-none">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="#" class="text-secondary text-decoration-none">Terms of Use</a></li>
+                <li class="list-inline-item"><a href="#" class="text-secondary text-decoration-none">Sitemap</a></li>
+            </ul>     
+        </div>  
+        <div class="col-md-2 text-center text-md-left" pardot-region="footer-social">
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#" class="text-secondary"><i class="bi bi-linkedin"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-secondary"><i class="bi bi-reddit"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-secondary"><i class="bi bi-github"></i></a></li>
+            </ul>                   
+        </div>                         
+    </div>
+</div>
+</footer>
+<!-- Footer End -->  
+  
+  </body>
+</html>
